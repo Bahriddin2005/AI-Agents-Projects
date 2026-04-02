@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>500+ AI Agent Projects</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- Navigation -->
+<nav class="navbar">
+    <div class="nav-container">
+        <a href="#" class="logo">🤖 AI Agents Hub</a>
+        <div class="nav-links">
+            <a href="#use-cases">Use Cases</a>
+            <a href="#frameworks">Frameworks</a>
+            <a href="#course">Course</a>
+            <a href="https://github.com/Bahriddin2005/AI-Agents-Projects" target="_blank" class="btn-github">⭐ GitHub</a>
+        </div>
+        <button class="mobile-toggle" onclick="toggleMenu()">☰</button>
+    </div>
+</nav>
+
+<!-- Hero Section -->
+<section class="hero">
+    <div class="hero-content">
+        <div class="badge">🌟 500+ Projects & Use Cases</div>
+        <h1>AI Agent Projects<br><span class="gradient-text">Collection</span></h1>
+        <p>A curated collection of AI agent use cases across industries — Healthcare, Finance, Education, and more. Explore how AI agents are transforming the world.</p>
+        <div class="hero-buttons">
+            <a href="#use-cases" class="btn btn-primary">Explore Projects</a>
+            <a href="#frameworks" class="btn btn-secondary">View Frameworks</a>
+        </div>
+        <div class="stats">
+            <div class="stat"><span class="stat-number">500+</span><span class="stat-label">Projects</span></div>
+            <div class="stat"><span class="stat-number">18+</span><span class="stat-label">Industries</span></div>
+            <div class="stat"><span class="stat-number">4</span><span class="stat-label">Frameworks</span></div>
+        </div>
+    </div>
+</section>
+
+<!-- Industries Section -->
+<section class="section" id="industries">
+    <div class="container">
+        <h2 class="section-title">Industries</h2>
+        <p class="section-subtitle">AI agents are making an impact across these industries</p>
+        <div class="industry-grid">
+            <div class="industry-card" data-filter="Healthcare"><span class="industry-icon">🏥</span><span>Healthcare</span></div>
+            <div class="industry-card" data-filter="Finance"><span class="industry-icon">💰</span><span>Finance</span></div>
+            <div class="industry-card" data-filter="Education"><span class="industry-icon">🎓</span><span>Education</span></div>
+            <div class="industry-card" data-filter="Customer Service"><span class="industry-icon">💬</span><span>Customer Service</span></div>
+            <div class="industry-card" data-filter="Retail"><span class="industry-icon">🛒</span><span>Retail</span></div>
+            <div class="industry-card" data-filter="Transportation"><span class="industry-icon">🚗</span><span>Transportation</span></div>
+            <div class="industry-card" data-filter="Manufacturing"><span class="industry-icon">🏭</span><span>Manufacturing</span></div>
+            <div class="industry-card" data-filter="Real Estate"><span class="industry-icon">🏠</span><span>Real Estate</span></div>
+            <div class="industry-card" data-filter="Agriculture"><span class="industry-icon">🌾</span><span>Agriculture</span></div>
+            <div class="industry-card" data-filter="Energy"><span class="industry-icon">⚡</span><span>Energy</span></div>
+            <div class="industry-card" data-filter="Entertainment"><span class="industry-icon">🎬</span><span>Entertainment</span></div>
+            <div class="industry-card" data-filter="Cybersecurity"><span class="industry-icon">🔒</span><span>Cybersecurity</span></div>
+        </div>
+    </div>
+</section>
+
+<!-- Use Cases Section -->
+<section class="section section-dark" id="use-cases">
+    <div class="container">
+        <h2 class="section-title">Use Cases</h2>
+        <p class="section-subtitle">Real-world AI agent applications with open-source implementations</p>
+        
+        <div class="search-bar">
+            <input type="text" id="searchInput" placeholder="🔍 Search projects..." onkeyup="filterProjects()">
+        </div>
+
+        <div class="projects-grid" id="projectsGrid">
+            <!-- Projects will be inserted by JS -->
+        </div>
+    </div>
+</section>
+
+<!-- Frameworks Section -->
+<section class="section" id="frameworks">
+    <div class="container">
+        <h2 class="section-title">Frameworks</h2>
+        <p class="section-subtitle">Explore AI agent projects by framework</p>
+
+        <div class="framework-tabs">
+            <button class="tab-btn active" onclick="switchTab('crewai')">🚀 CrewAI</button>
+            <button class="tab-btn" onclick="switchTab('autogen')">🤖 AutoGen</button>
+            <button class="tab-btn" onclick="switchTab('agno')">🧠 Agno</button>
+            <button class="tab-btn" onclick="switchTab('langgraph')">🔗 LangGraph</button>
+        </div>
+
+        <div class="framework-content" id="frameworkContent">
+            <!-- Framework content inserted by JS -->
+        </div>
+    </div>
+</section>
+
+<!-- Course Section -->
+<section class="section section-dark" id="course">
+    <div class="container">
+        <h2 class="section-title">CrewAI + MCP Course</h2>
+        <p class="section-subtitle">Learn to build AI agents step by step</p>
+        
+        <div class="course-grid">
+            <div class="course-card">
+                <div class="course-number">01</div>
+                <h3>Setting up CrewAI</h3>
+                <p>Install packages, set up environment, create your first CrewAI agent and execute tasks.</p>
+                <div class="course-tags">
+                    <span class="tag">Python</span>
+                    <span class="tag">CrewAI</span>
+                    <span class="tag">Setup</span>
+                </div>
+            </div>
+            <div class="course-card">
+                <div class="course-number">02</div>
+                <h3>MCP Integration</h3>
+                <p>Create custom tools for MCP server access, configure authentication, and handle data.</p>
+                <div class="course-tags">
+                    <span class="tag">FastMCP</span>
+                    <span class="tag">Tools</span>
+                    <span class="tag">API</span>
+                </div>
+            </div>
+            <div class="course-card">
+                <div class="course-number">03</div>
+                <h3>Advanced Patterns</h3>
+                <p>Multi-agent workflows, hierarchical processes, shared data and quality assurance.</p>
+                <div class="course-tags">
+                    <span class="tag">Multi-Agent</span>
+                    <span class="tag">Workflow</span>
+                    <span class="tag">Advanced</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+    <div class="container">
+        <p>🤖 500+ AI Agent Projects — Built with ❤️ | <a href="https://github.com/Bahriddin2005/AI-Agents-Projects" target="_blank">GitHub</a> | MIT License</p>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
